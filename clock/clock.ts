@@ -13,7 +13,7 @@ export class Clock {
    * @return [number, number], first one represents the carry, and second one represents the truncation
    * 
    */
-  private customerDecimal(input: number = 0, system: number): [number, number] {
+  private customerDecimal(input: number, system: number): [number, number] {
     const carry = Math.floor(input / system);
     const truncation = input % system;
     return [carry, truncation < 0 ? truncation + system : truncation];
