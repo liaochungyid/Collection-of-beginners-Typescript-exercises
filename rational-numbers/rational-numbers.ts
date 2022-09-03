@@ -52,7 +52,7 @@ export class Rational {
     let [x, y] = [this.n, this.d];
     while (y) {
       [x, y] = [y, x % y];
-    };
+    }
     this.n = this.n / x;
     this.d = this.d / x;
     if (this.d !== Math.abs(this.d)) {
