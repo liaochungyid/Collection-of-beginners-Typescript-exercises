@@ -1,19 +1,3 @@
-export const colorCode = (color: string): number => {
-  const colors = [
-    'black',
-    'brown',
-    'red',
-    'orange',
-    'yellow',
-    'green',
-    'blue',
-    'violet',
-    'grey',
-    'white',
-  ];
-  return colors.indexOf(color);
-}
-
 export const COLORS = [
   'black',
   'brown',
@@ -26,3 +10,7 @@ export const COLORS = [
   'grey',
   'white',
 ];
+
+export const colorCode = (color: string): number => {
+  return COLORS.indexOf(color);
+}
